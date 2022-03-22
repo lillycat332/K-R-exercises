@@ -20,8 +20,8 @@ int main()
 			max = len;
 			copy(longest, line);
 		}
-	if (max > 0)
-		printf("%d, %s", max, longest);
+	if (max > 80)
+		printf("%s", longest);
 	return 0;
 }
 
