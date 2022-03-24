@@ -1,49 +1,18 @@
 /Volumes/cs/Programming/C/k+r/ch1/1.1
 /mnt/font/GoMono/15a/font
 /nix/store/d2zsxhlwhzx0y9cnmmdhppkqmq0xsrdi-plan9port-2021-10-19/plan9/font/lucm/unicode.9.font
-  0.0000000  59.7005988
-w win Newcol Kill Putall Dump Exit Dump /Volumes/cs/Programming/C/k+r/acme.dump
+  0.0000000  60.3892216
+w Newcol Kill Putall Dump Exit Dump /Volumes/cs/Programming/C/k+r/acme.dump
 c          0 New Cut Paste Snarf Sort Zerox Delcol 
 c          1 New Cut Paste Snarf Sort Zerox Delcol 
-F          0           0         325         325   2.1654636         325 
-         13          72         325           0           1 /Volumes/cs/Programming/C/k+r/ch1/1.7/power.c Del Snarf Undo Put | Look 
-#include <stdio.h>
-
-int power(int m, int n);
-
-/* driver code */
-
-main()
-{
-	int i;
-
-	for (i = 0; i < 10; ++i)
-		printf("%d %d %d\n", i, power(2,i), power(-3,i));/
-	return 0;
-}
-
-/* power: raise base to nth power; n >= 0 */
-
-int power(int base, int n)
-{
-	int i, p;
-
-	p = 1;
-	for (i = 1; i <- n; ++i)
-		p = p * base;
-	return p;
-}f          0          15         248         248   4.3309273 
-         15          81         445           0           0 /Volumes/cs/Programming/C/k+r/ch1/1.7/cel-fahr-func.c Del Snarf Undo Redo | Look 
-f          0          19         160         160   6.4963909 
-         19          68         312           0           0 /Volumes/cs/Programming/C/k+r/ch1/1.8/power.c Del Snarf Undo | Look 
-e          1           0           0           0   2.1654636 
-          3          67      203418           0           1 /Volumes/cs/Programming/C/k+r/ch1/1.9/-mirai Del Snarf | Look  Send
-/Volumes/cs/Programming/C/k+r/ch1/1.1/
-win rc -l
-f          1          16           0           0  48.3620211 
-         16          52          24           1           0 /Volumes/cs/Programming/C/k+r/ Del Snarf Get | Look 
-F          1           2         441         441  70.5719045         441 
-          8          25         441           0           0 +Errors Del Snarf | Look 
+f          0           4         179         456   2.1606648 
+          4          62         857           0           0 /Volumes/cs/Programming/C/k+r/ch1/1.9/1-18.c Del Snarf | Look 
+f          0           8         218         218   4.3213296 
+          8          81         570           0           0 /Volumes/cs/Programming/C/k+r/ch1/1.9/1-19.c Del Snarf Undo Redo | Look Indent ON
+f          1           1           0           0   2.1606648 
+          1          60          15           1           0 /Volumes/cs/Programming/C/k+r/ch1/1.1/ Del Snarf Get | Look 
+F          1           1         601         601   4.3213296         601 
+          6          25         601           0           0 +Errors Del Snarf | Look 
 Indent ON
 /Volumes/cs/Programming/C/k+r/ch1/1.5/1.5.4/a.*: no matches in:
  wordcount.c 
@@ -59,3 +28,14 @@ error attempting completion: No such file or directory
  celcius-fahrenheit.c
  celsius-fahrenheit.c
 /Volumes/cs/Programming/C/k+r/ch1/1.7/cel-fahr-func.c modified
+int l/Volumes/cs/Programming/C/k+r/ch1/1.9/lp*: no matches in:
+ longest-text.c
+/Volumes/cs/Programming/C/k+r/ch1/1.9/*
+ 1-16.c
+ a.out
+ longest-text.c
+Indent ON
+e          1           0           0           0  30.4709141 
+          7          66       35816           0           1 /Volumes/cs/Programming/C/k+r/ch1/1.9/-mirai Del Snarf | Look Send
+/Volumes/cs/Programming/C/k+r/ch1/1.1/
+win rc -l
