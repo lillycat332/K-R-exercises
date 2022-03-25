@@ -1,6 +1,6 @@
 #include <stdio.h>
 #define COL 80
-/* Strip Comments from C source code */
+/* Fold lines after 80 columns */
 
 int main()
 {
@@ -8,7 +8,7 @@ int main()
 
 	while ((c = getchar()) != EOF) {
 		count++;
-		if ((c == ' ' || c == '\t') && count >= COL)
+		if ((c == ' ' || c == '\t') && count >= COL)	/* There are probably more whitespace characters. */
 			putchar('\n');
 		else
 			putchar(c);

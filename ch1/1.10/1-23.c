@@ -4,23 +4,23 @@
 
 int main()
 {
-	int c;
-	bool inComment = false;
-	char lastChar;
+	int c;				/* c = char */
+	bool ic = false;	/* ic = in comment, are we currently in a comment block? */
+	char lc;			/* lc = last character, what was the last character? */
 
 	while ((c = getchar()) != EOF) {
-		if (c == '/' && lastChar != '*')
-			inComment = true;
+		if (c == '/' && lc != '*')
+			ic = true;
 
-		if ((c == '*') && (lastChar = '/'))
-			inComment = true;
+		if ((c == '*') && (lc = '/'))
+			ic = true;
 
-		if (!inComment)
+		if (!ic)
 			putchar(c);
 
-		if ((c == '/') && (lastChar == '*'))
-			inComment = false;
+		if ((c == '/') && (lc == '*'))
+			ic = false;
 
-		lastChar = c;
+		lc = c;
 	}
 }

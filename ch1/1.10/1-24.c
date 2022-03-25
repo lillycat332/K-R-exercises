@@ -2,44 +2,44 @@
 
 int main()
 {
-	int parenCount = 0, braceCount = 0, bracketCount = 0, c;
+	int p = 0, br = 0, b = 0, c;	/* p = parentheses, br = braces, b = brackets */
 
 	while ((c = getchar()) !=EOF) {
 		if (c == '(')
-			parenCount++;
+			p++;
 
 		else if (c == ')')
-			parenCount--;
+			p--;
 
 		else if (c == '[')
-			bracketCount++;
+			b++;
 
 		else if (c == ']')
-			bracketCount--;
+			b--;
 
 		else if (c == '{')
-			braceCount++;
+			br++;
 
 		else if (c == '}')
-			braceCount--;
+			br--;
 	}
 
-	if (parenCount > 0)
+	if (p > 0)
 		printf("\nError: unclosed (parentheses)\n");
 
-	if (bracketCount > 0)
+	if (b > 0)
 		printf("\nError: unclosed [brackets]\n");
 
-	if (braceCount > 0)
+	if (br > 0)
 		printf("\nError: unclosed {braces}\n");
 
-	if (parenCount < 0)
+	if (p < 0)
 		printf("\nError: extraneous closing (parentheses)\n");
 
-	if (bracketCount < 0)
+	if (b < 0)
 		printf("\nError: extraneous closing [brackets]\n");
 
-	if (braceCount < 0)
+	if (br < 0)
 		printf("\nError: extraneous closing {braces}\n");
 
 	else

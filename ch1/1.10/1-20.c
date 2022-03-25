@@ -1,17 +1,17 @@
 #include <stdio.h>
-#define TABLENGTH 8	/* length of a tab */
+#define TABLENGTH 8	/* the 'length' of a tab is 8 cols */
 
 int main()
 {
-	int lineCount = 0, spaceLength = 0, c;
-
+	int lc = 0, s = 0, c;	/* s = length of a space */
+							/* lc = distance from beginning of line */
 	while ((c = getchar()) != EOF) {
 		if (c == '\t') {
-			spaceLength = (TABLENGTH - (lineCount % TABLENGTH));
-			while (spaceLength > 0) {
+			s = (TABLENGTH - (lc % TABLENGTH));
+			while (s > 0) {
 				putchar(' ');
-				lineCount++;
-				spaceLength--;
+				lc++;
+				s--;
 			}
 		}
 
